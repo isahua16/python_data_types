@@ -51,4 +51,6 @@ clients = [
 ]
 
 for client in clients:
-    print(client["username"], client["age"], client["friends"])
+    print(client["username"], client["age"])
+    for friend in client["friends"]:
+        print(friend)
